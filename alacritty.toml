@@ -9,6 +9,8 @@
 #                |_|                                                                                                                         ███    ███                         
 #
 
+[window]
+opacity = 0.75
 [colors]
 [colors.primary]
 background = "#0f191c"

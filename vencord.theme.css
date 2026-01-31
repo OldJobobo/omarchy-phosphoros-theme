@@ -341,6 +341,18 @@ div[class*="jumpToPresentBar"] {
   border-color: var(--color13) !important;
 }
 
+/*--- New Messages Jump-To Popover Text ---*/
+[id^="NewMessagesBarJumpToNewMessages_"],
+[id^="NewMessagesBarJumpToNewMessages_"] * {
+  color: var(--color15) !important;
+}
+
+/*--- New Messages Bar Button Text (barButtonAlt) ---*/
+.newMessagesBar__0f481 .barButtonAlt__0f481,
+.newMessagesBar__0f481 .barButtonAlt__0f481 * {
+  color: var(--color15) !important;
+}
+
 /*--- Mention Count Pills ---*/
 span[class*="mention"],
 span[class*="mention"] span {
