@@ -14,13 +14,13 @@
 theme[main_bg]="#0f191c"
 
 # Main text color
-theme[main_fg]="#507350"
+theme[main_fg]="#409931"
 
 # Title color for boxes
 theme[title]="#11ff25"
 
 # Highlight color for keyboard shortcuts
-theme[hi_fg]="#c1ff8a"
+theme[hi_fg]="#faff00"
 
 # Background color of selected item in processes box
 theme[selected_bg]="#11ff25"
@@ -28,57 +28,57 @@ theme[selected_bg]="#11ff25"
 # Foreground color of selected item in processes box
 theme[selected_fg]="#0f191c"
 
-# Color of inactive/disabled text
-theme[inactive_fg]="#4f7e7e"
+# Color of inactive/disabled text (effects proc_list gradient)
+theme[inactive_fg]="#507350"
 
 # Misc colors for processes box including mini cpu graphs, details memory graph and details status text
-theme[proc_misc]="#90d762"
+theme[proc_misc]="#11ff25"
 
 # Box outline and divider line color
-theme[cpu_box]="#90d762"
-theme[mem_box]="#90d762"
-theme[net_box]="#90d762"
-theme[proc_box]="#90d762"
-theme[div_line]="#4f7e7e"
+theme[cpu_box]="#11ff25"
+theme[mem_box]="#faff00"
+theme[net_box]="#11ff25"
+theme[proc_box]="#faff00"
+theme[div_line]="#faff00"
 
 # Gradient for all meters and graphs
-theme[temp_start]="#688060"
-theme[temp_mid]="#90d762"
+theme[temp_start]="#507350"
+theme[temp_mid]="#c1ff8a"
 theme[temp_end]="#faff00"
 
+# (effects proc_list gradient)
+theme[cpu_start]="#11ff25" 
+theme[cpu_mid]="#90d762"
+theme[cpu_end]="#507350"
 
-theme[cpu_start]="#688060"
-theme[cpu_mid]="#11ff25"
-theme[cpu_end]="#faff00"
-
-theme[free_start]="#11ff25"
+theme[free_start]="#90d762"
 theme[free_mid]="#c1ff8a"
-theme[free_end]="#90d762"
+theme[free_end]="#faff00"
 
 
-theme[cached_start]="#4f7e7e"
-theme[cached_mid]="#90d762"
-theme[cached_end]="#c1ff8a"
+theme[cached_start]="#90d762"
+theme[cached_mid]="#c1ff8a"
+theme[cached_end]="#faff00"
 
 
-theme[available_start]="#507350"
-theme[available_mid]="#4f7e7e"
-theme[available_end]="#688060"
+theme[available_start]="#90d762"
+theme[available_mid]="#c1ff8a"
+theme[available_end]="#faff00"
 
 
-theme[used_start]="#ffd700"
-theme[used_mid]="#faff00"
+theme[used_start]="#90d762"
+theme[used_mid]="#c1ff8a"
 theme[used_end]="#faff00"
 
 
-theme[download_start]="#4f7e7e"
-theme[download_mid]="#90d762"
-theme[download_end]="#11ff25"
+theme[download_start]="#90d762"
+theme[download_mid]="#c1ff8a"
+theme[download_end]="#faff00"
 
 
-theme[upload_start]="#4f7e7e"
-theme[upload_mid]="#90d762"
-theme[upload_end]="#11ff25"
+theme[upload_start]="#90d762"
+theme[upload_mid]="#c1ff8a"
+theme[upload_end]="#faff00"
 
 #  
 #      )                                     
@@ -90,4 +90,4 @@ theme[upload_end]="#11ff25"
 #  | (_) | / _` | || / _ \ '_ Y _ \ '_ Y _ \ 
 #   \___/|_\__,_|\__/\___/_.__|___/_.__|___/ 
 #                                            
-#  25-01-26
+#  26-02-01

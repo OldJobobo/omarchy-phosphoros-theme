@@ -18,6 +18,24 @@
 @define-color foreground #507350;
 @define-color background #0f191c;
 
+window {
+    background-color: transparent;
+    color: @text;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+/* Walker Window Border */
+window .box-wrapper {
+    border-radius: 4px;
+    border: 2px solid alpha(@border, 0.7);  
+    padding: 18px 22px;
+    background: @base;
+    background-clip: padding-box;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 1);
+}
+
 /*
      )                                     
   ( /(  (  (               )        )      

@@ -518,14 +518,79 @@ div[class*="sidebar"] div[class*="scroller"] {
   padding-bottom: calc(var(--custom-app-panels-height, 0px) + var(--mx-gap)) !important;
 }
 
-/* Code blocks */
+/* Code blocks + inline code */
 .theme-dark pre,
 .theme-darker pre,
 .theme-midnight pre,
 .visual-refresh pre {
-  background: color-mix(in srgb, var(--mx-1) 85%, black) !important;
-  border: 1px solid color-mix(in srgb, var(--mx-green) 25%, transparent) !important;
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--mx-green) 12%, transparent) !important;
+  background: color-mix(in srgb, var(--mx-2) 88%, black) !important;
+  border: 1px solid color-mix(in srgb, var(--mx-green) 30%, transparent) !important;
+  border-radius: 10px !important;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--mx-green) 10%, transparent) !important;
+}
+
+.theme-dark :is(pre, code),
+.theme-darker :is(pre, code),
+.theme-midnight :is(pre, code),
+.visual-refresh :is(pre, code) {
+  font-family: "JetBrains Mono", "Fira Code", "Cascadia Code", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+  font-variant-ligatures: none !important;
+}
+
+.theme-dark :is(pre code, .hljs, .codeBlockText),
+.theme-darker :is(pre code, .hljs, .codeBlockText),
+.theme-midnight :is(pre code, .hljs, .codeBlockText),
+.visual-refresh :is(pre code, .hljs, .codeBlockText) {
+  color: var(--text-normal) !important;
+  text-shadow: none !important;
+}
+
+.theme-dark :is(code, .inlineCode),
+.theme-darker :is(code, .inlineCode),
+.theme-midnight :is(code, .inlineCode),
+.visual-refresh :is(code, .inlineCode) {
+  background: color-mix(in srgb, var(--mx-1) 80%, black) !important;
+  border: 1px solid color-mix(in srgb, var(--mx-green) 22%, transparent) !important;
+  border-radius: 6px !important;
+  color: var(--mx-amber) !important;
+  padding: 0.12em 0.35em !important;
+}
+
+/* Highlight.js token tweaks for a cleaner, standard feel */
+.theme-dark :is(.hljs-comment, .hljs-quote),
+.theme-darker :is(.hljs-comment, .hljs-quote),
+.theme-midnight :is(.hljs-comment, .hljs-quote),
+.visual-refresh :is(.hljs-comment, .hljs-quote) {
+  color: color-mix(in srgb, var(--color01) 70%, var(--mx-4)) !important;
+  font-style: italic !important;
+}
+
+.theme-dark :is(.hljs-keyword, .hljs-selector-tag, .hljs-literal),
+.theme-darker :is(.hljs-keyword, .hljs-selector-tag, .hljs-literal),
+.theme-midnight :is(.hljs-keyword, .hljs-selector-tag, .hljs-literal),
+.visual-refresh :is(.hljs-keyword, .hljs-selector-tag, .hljs-literal) {
+  color: var(--mx-green) !important;
+}
+
+.theme-dark :is(.hljs-string, .hljs-doctag),
+.theme-darker :is(.hljs-string, .hljs-doctag),
+.theme-midnight :is(.hljs-string, .hljs-doctag),
+.visual-refresh :is(.hljs-string, .hljs-doctag) {
+  color: var(--mx-amber) !important;
+}
+
+.theme-dark :is(.hljs-number, .hljs-attr, .hljs-attribute),
+.theme-darker :is(.hljs-number, .hljs-attr, .hljs-attribute),
+.theme-midnight :is(.hljs-number, .hljs-attr, .hljs-attribute),
+.visual-refresh :is(.hljs-number, .hljs-attr, .hljs-attribute) {
+  color: color-mix(in srgb, var(--mx-amber) 65%, var(--mx-green)) !important;
+}
+
+.theme-dark :is(.hljs-title, .hljs-section, .hljs-name),
+.theme-darker :is(.hljs-title, .hljs-section, .hljs-name),
+.theme-midnight :is(.hljs-title, .hljs-section, .hljs-name),
+.visual-refresh :is(.hljs-title, .hljs-section, .hljs-name) {
+  color: var(--color13) !important;
 }
 
 /* Links get a subtle console glow */
