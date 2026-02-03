@@ -255,6 +255,25 @@ a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
   color: #409931 !important;
 }
 
+/* Avoid double borders when reply bar expands the input */
+[class*="channelTextArea"]:has([class*="replyBar"], [class*="attachedBars"]) [class*="scrollableContainer"] {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Restore rounded top corners when reply/attachment bars are visible */
+[class*="channelTextArea"]:has([class*="replyBar"], [class*="attachedBars"]) {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+  overflow: hidden !important;
+}
+
+[class*="channelTextArea"] [class*="replyBar"],
+[class*="channelTextArea"] [class*="attachedBars"] {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
 /* Chat input buttons (attach/gift/gif/etc) */
 [class*="scrollableContainer"] [class*="buttons__"] {
   color: #409931 !important;
