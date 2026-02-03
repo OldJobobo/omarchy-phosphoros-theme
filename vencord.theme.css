@@ -217,8 +217,8 @@ a[data-list-item-id^="channels___"]:hover {
 /* Channel icon base */
 a[data-list-item-id^="channels___"] svg,
 a[data-list-item-id^="channels___"] svg path {
-  fill: var(--mx-green-dim) !important;
-  color: var(--mx-green-dim) !important;
+  fill: color-mix(in srgb, #faff00 40%, var(--mx-1)) !important;
+  color: color-mix(in srgb, #faff00 40%, var(--mx-1)) !important;
 }
 
 /* Channel name base (read / not selected) */
@@ -245,8 +245,8 @@ a[data-list-item-id^="channels___"][class*="modeUnread"] svg,
 a[data-list-item-id^="channels___"][class*="modeUnread"] svg path,
 [class*="modeUnread"] [class*="icon__"],
 [class*="modeUnread"] [class*="icon__"] path {
-  fill: var(--mx-green) !important;
-  color: var(--mx-green) !important;
+  fill: #faff00 !important;
+  color: #faff00 !important;
 }
 
 /* Unread channel name */
@@ -413,7 +413,7 @@ div[class*="unreadMentionsIndicatorBottom"] > div {
 
 /* Channel list unread count: target the "N New" label in channel rows */
 #channels [class*="children__"] [data-text-variant="text-xs/semibold"] {
-  color: var(--mx-green) !important;
+  color: #faff00 !important;
   text-transform: lowercase !important;
   letter-spacing: 0.02em !important;
 }
